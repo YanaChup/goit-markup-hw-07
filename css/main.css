@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: var(--brand-color);
+  color: #212121;
   line-height: 16px;
   letter-spacing: 0.03em;
   margin: 0;
@@ -63,8 +63,8 @@ img {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  color: var(--secondary-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
@@ -195,18 +195,12 @@ img {
 .features__list {
   display: flex;
 }
-
 .features__item {
   width: 270px;
 }
-
-.features__item:not(:last-child),
-.about__item:not(:last-child),
-.team__item:not(:last-child),
-.client-icon__item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
-
 .features__icon-wrapper {
   display: flex;
   justify-content: center;
@@ -215,29 +209,27 @@ img {
   height: 120px;
   background-color: #f5f4fa;
 }
-
 .features__heading {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-
 .features__text {
   line-height: 24px;
-  color: var(--text-color);
+  color: #757575;
 }
 
 .about--nopadding {
   padding-top: 0;
 }
-
 .about__list {
   display: flex;
 }
-
+.about__item:not(:last-child) {
+  margin-right: 30px;
+}
 .about__img-wrapper {
   position: relative;
 }
-
 .about__img-text {
   position: absolute;
   left: 0;
@@ -247,7 +239,7 @@ img {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
@@ -263,6 +255,11 @@ img {
   background-color: var(--secondary-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team__item:not(:last-child),
+.client-icon__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .team__info {
