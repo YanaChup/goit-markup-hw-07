@@ -27,6 +27,11 @@
   margin-bottom: 9px;
   transition: color var(--transition-dur-and-func);
 }
+
+.address__link:hover,
+.address__link:focus {
+  color: $accent-color;
+}
 .footer__heading {
   color: var(--secondary-color);
   margin-bottom: 30px;

@@ -10,12 +10,6 @@ section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 h1,
 h2,
 h3,
@@ -34,17 +28,23 @@ ol {
 a {
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+}
 img {
   display: block;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-}
-button {
-  cursor: pointer;
 }
 .btn,
 .modal-form-btn {
