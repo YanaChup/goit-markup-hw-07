@@ -1,0 +1,28 @@
+.client-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-icon__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  transition: border var(--transition-dur-and-func);
+}
+.client-icon__link:hover,
+.client-icon__link:focus {
+  border: 1px solid var(--accent-color);
+}
+.client-icon__icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--icon-color);
+  transition: fill var(--transition-dur-and-func);
+}
+.client-icon__link:hover .client-icon__icon,
+.client-icon__link:focus .client-icon__icon {
+  fill: var(--accent-color);
+}

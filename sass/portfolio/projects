@@ -1,0 +1,120 @@
+.projects-filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.projects-filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.project-filter-btn {
+  padding: 6px 22px;
+  background-color: #f5f4fa;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  border-radius: 4px;
+  border-style: none;
+  transition: background-color var(--transition-dur-and-func),
+    color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
+}
+.project-filter-btn:hover,
+.project-filter-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.projects-item:nth-child(3n) {
+  margin-right: 0;
+}
+.projects-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.projects-link {
+  transition: box-shadow var(--transition-dur-and-func);
+}
+.projects-link:hover,
+.projects-link:focus {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.projects-link:hover .projects-overlay-text-inner,
+.projects-link:focus .projects-overlay-text-inner {
+  transform: translatey(0);
+}
+.projects-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.projects-img {
+  width: 100%;
+}
+.projects-overlay-text-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform var(--transition-dur-and-func);
+}
+.projects-overlay-text {
+  color: var(--secondary-color);
+  font-size: 18px;
+  line-height: 28px;
+  padding: 15px 24px;
+}
+.projects-info {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+.projects-title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--brand-color);
+}
+.projects-text {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--text-color);
+  background-position: 0 0;
+}
+/* end projects */
+/* start backdrop */
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--transition-dur-and-func),
+    visibility var(--transition-dur-and-func);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}

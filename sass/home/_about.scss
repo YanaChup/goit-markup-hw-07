@@ -1,0 +1,21 @@
+.about--nopadding {
+  padding-top: 0;
+}
+.about__list {
+  display: flex;
+}
+.about__img-wrapper {
+  position: relative;
+}
+.about__img-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 27px 10px;
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
