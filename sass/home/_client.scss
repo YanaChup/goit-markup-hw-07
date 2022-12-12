@@ -1,7 +1,9 @@
-.client-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.client {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &__item {
     &:not(:last-child) {
       margin-right: 30px;
@@ -27,9 +29,9 @@
     transition: fill $transition-dur-and-func;
   }
 }
-.client-icon__link:hover,
-.client-icon__link:focus {
-  .client-icon__icon {
+.client__link:hover,
+.client__link:focus {
+  .client__icon {
     fill: $accent-color;
   }
 }
