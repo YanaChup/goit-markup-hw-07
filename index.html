@@ -529,23 +529,27 @@
             <a class="logo logo__footer" href="#"
               ><span class="logo__text">Web</span>Studio</a
             >
-            <address class="address">
-              <p class="address__location">м. Київ, пр-т Лесі Українки, 26</p>
-              <ul class="address__list">
-                <li class="address__item">
-                  <a class="address__link" href="mailto:info@devstudio.com"
+            <address class="footer__address">
+              <p class="footer__address-location">
+                м. Київ, пр-т Лесі Українки, 26
+              </p>
+              <ul class="footer__address-list">
+                <li class="footer__address-item">
+                  <a
+                    class="footer__address-link"
+                    href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="address__item">
-                  <a class="address__link" href="tel:+380961111111"
+                <li class="footer__address-item">
+                  <a class="footer__address-link" href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
               </ul>
             </address>
           </div>
-          <div class="footer-social-wrapper">
+          <div class="footer__social-wrapper">
             <h3 class="footer__heading">Приєднуйтесь</h3>
             <ul class="social-icon">
               <li class="social-icon__item">
@@ -620,74 +624,86 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" type="button" data-modal-close>
-          <svg class="modal-close-icon" width="18" height="18">
+        <button class="modal__close-btn" type="button" data-modal-close>
+          <svg class="modal__close-icon" width="18" height="18">
             <use href="./images/icons/icons.svg#icon-close"></use>
           </svg>
         </button>
         <form class="register-form" name="register-form">
-          <p class="register-title">Залиште свої дані, ми вам передзвонимо</p>
-          <div class="register-group" role="group">
-            <label class="register-wrap">
-              <span class="register-label">Ім'я</span>
-              <span class="register-icon-inner">
-                <input class="register-field" type="text" name="username" />
-                <svg class="register-icon">
+          <p class="register-form__title">
+            Залиште свої дані, ми вам передзвонимо
+          </p>
+          <div class="register-form__group" role="group">
+            <label class="register-form__wrap">
+              <span class="register-form__label">Ім'я</span>
+              <span class="register-form__icon-inner">
+                <input
+                  class="register-form__field"
+                  type="text"
+                  name="username"
+                />
+                <svg class="register-form__icon">
                   <use href="./images/icons/icons.svg#icon-modal-user"></use>
                 </svg>
               </span>
             </label>
-            <label class="register-wrap">
-              <span class="register-label">Телефон</span>
-              <span class="register-icon-inner">
-                <input class="register-field" type="tel" name="usertel" />
-                <svg class="register-icon">
+            <label class="register-form__wrap">
+              <span class="register-form__label">Телефон</span>
+              <span class="register-form__icon-inner">
+                <input class="register-form__field" type="tel" name="usertel" />
+                <svg class="register-form__icon">
                   <use href="./images/icons/icons.svg#icon-modal-phone"></use>
                 </svg>
               </span>
             </label>
-            <label class="register-wrap">
-              <span class="register-label">Пошта</span>
-              <span class="register-icon-inner">
-                <input class="register-field" type="emai" name="useremail" />
-                <svg class="register-icon">
+            <label class="register-form__wrap">
+              <span class="register-form__label">Пошта</span>
+              <span class="register-form__icon-inner">
+                <input
+                  class="register-form__field"
+                  type="emai"
+                  name="useremail"
+                />
+                <svg class="register-form__icon">
                   <use href="./images/icons/icons.svg#icon-modal-email"></use>
                 </svg>
               </span>
             </label>
-            <label class="register-wrap">
-              <span class="register-label">Коментар</span>
+            <label class="register-form__wrap">
+              <span class="register-form__label">Коментар</span>
               <textarea
-                class="register-message"
+                class="register-form__message"
                 name="usercomment"
                 placeholder="Введіть коментар"
               ></textarea>
             </label>
           </div>
-          <label class="register-agreement">
+          <label class="register-form__agreement">
             <input
-              class="register-checkbox visually-hidden"
+              class="register-form__checkbox visually-hidden"
               type="checkbox"
               name="user-agreement"
             />
-            <svg class="register-agreement-icon" width="16" height="15">
+            <svg class="register-form__agreement-icon" width="16" height="15">
               <use
-                class="icon-check"
+                class="register-form__icon-check"
                 href="./images/icons/icons.svg#icon-checked"
               ></use>
               <use
-                class="icon-uncheck"
+                class="register-form__icon-uncheck"
                 href="./images/icons/icons.svg#icon-unchecked"
               ></use>
             </svg>
-            <span class="register-agreement-text">
+            <span class="register-form__agreement-text">
               Погоджуюся з розсилкою та приймаю
-              <a class="register-agreement-link" href="" target="_blank"
+              <a class="register-form__agreement-link" href="" target="_blank"
                 >Умови договору</a
               >
             </span>
           </label>
-          <button class="modal-form-btn" type="submit">Відправити</button>
+          <button class="register-form__btn btn" type="submit">
+            Відправити
+          </button>
         </form>
       </div>
     </div>
